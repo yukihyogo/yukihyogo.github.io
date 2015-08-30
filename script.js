@@ -5,8 +5,11 @@ $(function(){
     var topBtn = $('#page-top');    
     var topBtnTop = topBtn.offset().top;
     topBtn.hide();
+    var topBtnShowScroll = boxBottom - topBtnTop;
     $(window).scroll(function () {
-        if($(window).scrollTop() >= topBtnTop - boxBottom) {
+//        if($(window).scrollTop() >= topBtnTop - boxBottom) {
+        if($(window).scrollTop() >= topBtnShowScroll) {
+//        if($(window).scrollTop() >= 100) {
             topBtn.fadeIn();
             if($(window).scrollTop() >= boxTop) {
                 box.addClass("fixed");
