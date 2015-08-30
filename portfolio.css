@@ -1,0 +1,51 @@
+/*
+h1 {
+*/
+/*    font-family: 'Permanent Marker', cursive;    */
+/*    font-family: 'Gloria Hallelujah', cursive;    */
+/*    font-family: 'Rock Salt', cursive;            */
+/*    text-shadow: 4px 4px 4px #aaa;                */
+/*    text-align: center 0 no-repeat;
+    padding:180px 0;
+}
+*/
+
+.nav.center {
+    float:left;left:50%;position:relative;
+}
+
+.nav.center li {
+    float:left;
+    left:-50%;
+    position:relative;
+}
+
+header.jumbotron {
+    background: url("endlessload.jpg") ;
+    background-position: center 40%;
+    background-size: cover;
+}
+
+header h1.jumbotron-h1 {
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    padding:180px 0;
+/*    vertical-align: 20%;  */
+/*    background-color: red;    */
+}
+
+header .header-bottom {
+    background-color: #fff;
+}
+
+/*
+header ul {
+    color:red ;
+    text-align:center ;
+}
+
+header ul li {
+    display:inline-block ;
+}
+*/
+
