@@ -48,6 +48,7 @@ $(function(){
     var subBtn = $("#submit-inputInquiry");
     subBtn.click(function(){
         window.alert('送信機能は未実装です。');
+        return false;
     });
     
     //スクロールしてトップに移動
