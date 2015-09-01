@@ -33,14 +33,22 @@ $(function(){
 		var href= $(this).attr("href");
 		var target = $(href == "#" || href == "" ? 'html' : href);
 		var position;
+//        var position = target.offset().top;
 		if(windowWidth >= 768) {
-		    position = target.offset().top - box.height();              // メニューバーの幅を考慮
+//		    position = position - box.height();  // メニューバーの幅を考慮
+		    position = target.offset().top - box.height();  // メニューバーの幅を考慮
 		} else {
 		    position = target.offset().top;
 		}
 		$("html, body").animate({scrollTop:position}, speed, "swing");
 		return false;
 	});    
+    
+    //contact submitボタン
+    var subBtn = $("#submit-inputInquiry");
+    subBtn.click(function(){
+        window.alert('送信機能は未実装です。');
+    });
     
     //スクロールしてトップに移動
     topBtn.click(function () {
